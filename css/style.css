@@ -1,5 +1,11 @@
 body {
-    font-family: REM Regular;
+    font-family: REM Light;
+    font-size: 11pt;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Libre Baskerville;
+    font-weight: bold;
 }
 
 .modified-nav-link {
@@ -8,7 +14,7 @@ body {
 
 .modified-nav-pills .modified-nav-link.active {
     color: #000;
-    background-color: #eeeeee;
+    background-color: #f1f1f1;
 }
 
 .modified-nav {
@@ -16,34 +22,60 @@ body {
 }
 
 .tab-content-links a {
-    color: #000;
     text-decoration: none;
 }
 
 .tab-content-links a:hover, a:focus, a:active {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .avatar {
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 100px;
 }
 
 .avatar img {
-    width: 100%;
+    max-width: 100%;
     border-radius: 10px;
 }
 
 .social-handle-icon {
-    height: 25px;
-    width: 25px;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
 }
 
 .social-handle-icon img {
-    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
     border-radius: 4px;
 }
 
-.REM-light {
-    font-family: REM Light;
+.skills-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+}
+
+@media (min-width: 992px) {
+    .skills-icon {
+        height: 80px;
+        width: 80px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .skills-icon {
+        height: 100px;
+        width: 100px;
+    }
+}
+
+.skills-icon img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 4px;
 }
