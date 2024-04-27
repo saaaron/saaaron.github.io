@@ -6,14 +6,21 @@
     <title>Aaron Saleh's Portfolio</title>
     <link rel="icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/REM.css">
-    <link rel="stylesheet" type="text/css" href="css/LibreBaskerville.css">
+    <link rel="stylesheet" type="text/css" href="css/montserrat.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-icons.css">
 </head>
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark shadow fixed-top">
-    <div class="container">
-      <a class="navbar-brand libre-baskerville-bold" href="#home">Aaron</a>
+    <div class="container d-flex justify-content-between">
+      <div>
+        <a class="navbar-brand" href="#home">Aaron</a>
+      </div>
+      <div>
+        <a href="mailto:saaaron1380@gmail.com">
+          <button type="button" class="btn btn-outline-light"><span class="bi-send"></span> Contact me</button>
+        </a>
+      </div>
     </div>
   </nav>
   <div>
@@ -22,30 +29,31 @@
         <div class="row">
           <div class="col-md-6 col-lg-6 col-xl-6 mb-5">
             <div>
-              <h1>Hi! I'm Aaron Saleh,</h1>
-              <h4 >Web & Back-end Developer</h4>
+              <h6>&#128075; Hi! I'm Aaron Saleh,</h6>
+              <h2>Web & Back-end Developer</h2>
               <p>I love to solve problems and share knowledge.</p>
             </div>
             <div class="d-flex justify-content-start mb-3">
-              <div class="social-handle-icon shadow me-2" style="border-radius: 100px">
-                <a href="https://github.com/saaaron" target="_blank"><img src="img/github.png" alt="GitHub"></a>
-              </div>
-              <div class="social-handle-icon shadow me-2">
-                <a href="https://www.linkedin.com/in/sa-aaron" target="_blank"><img src="img/linkedin.png" alt="LinkedIn"></a>
-              </div>
-              <div class="social-handle-icon shadow">
-                <a href="https://twitter.com/SaAaron6" target="_blank"><img src="img/x.png" alt="Twitter"></a>
-              </div>
-            </div>
-            <div class="d-flex justify-content-start">
               <div class="me-2">
-                <a href="mailto:saaaron1380@gmail.com">
-                  <button type="button" class="btn btn-dark">Contact me</button>
+                <a href="https://github.com/saaaron" target="_blank">
+                  <button type="button" class="btn btn-dark"><span class="bi-github"></span> Github</button>
                 </a>
               </div>
               <div class="me-2">
+                <a href="https://www.linkedin.com/in/sa-aaron" target="_blank">
+                  <button type="button" class="btn btn-dark"><span class="bi-linkedin"></span> LinkedIn</button>
+                </a>
+              </div>
+              <div class="me-2">
+                <a href="https://twitter.com/SaAaron6" target="_blank">
+                  <button type="button" class="btn btn-dark"><span class="bi-twitter-x"></span> @SaAaron6</button>
+                </a>
+              </div>
+            </div>
+            <div class="d-flex justify-content-start">
+              <div>
                 <a href="https://flowcv.com/resume/te9b6b1bvh">
-                  <button type="button" class="btn btn-dark">My resume</button>
+                  <button type="button" class="btn btn-outline-dark">My resume <span class="bi-box-arrow-up-right"></span> </button>
                 </a>
               </div>
             </div>
@@ -102,10 +110,10 @@
             </div>
             <div class="d-flex justify-content-between mb-2">
               <ul class="nav nav-pills modified-nav modified-nav-pills" role="tablist">
-                <li class="nav-item libre-baskerville-bold">
-                  <a class="nav-link modified-nav-link active" data-bs-toggle="pill" href="#projects">Projects <span class="badge bg-dark">4</span></a>
+                <li class="nav-item">
+                  <a class="nav-link modified-nav-link active" data-bs-toggle="pill" href="#projects">Projects <span class="badge bg-dark">5</span></a>
                 </li>
-                <li class="nav-item libre-baskerville-bold">
+                <li class="nav-item">
                   <a class="nav-link modified-nav-link" data-bs-toggle="pill" href="#employees">Employees <span class="badge bg-dark">0</span></a>
                 </li>
               </ul>
@@ -114,24 +122,69 @@
               <!-- projects -->
               <div id="projects" class="tab-pane active tab-content-links">
                 <div class="card border-0 p-3 mb-2" style="background-color: #f1f1f1">
-                  <div><b>Sales record app</b></div>
-                  <div>A CRUD app built using Laravel 10 to manage sale records</div>
-                  <div><a href="https://github.com/saaaron/laravel10-crud-app" target="_blank">GitHub</a></div>
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <a href="https://github.com/saaaron/Litemail" target="_blank">
+                        <b>Litemail</b> <span class="bi-box-arrow-up-right"></span>
+                      </a>
+                    </div>
+                    <div>
+                      <span class="bi-github" title="on Github"></span>
+                    </div>
+                  </div>
+                  <div>A simple, lightweight, and fast email system built in PHP</div>
                 </div>
                 <div class="card border-0 p-3 mb-2" style="background-color: #f1f1f1">
-                  <div><b>Notepad</b></div>
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <a href="https://github.com/saaaron/laravel10-crud-app" target="_blank">
+                        <b>Sales record app</b> <span class="bi-box-arrow-up-right"></span>
+                      </a>
+                    </div>
+                    <div>
+                      <span class="bi-github" title="on Github"></span>
+                    </div>
+                  </div>
+                  <div>A CRUD app built using Laravel 10 to add records</div>
+                </div>
+                <div class="card border-0 p-3 mb-2" style="background-color: #f1f1f1">
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <a href="https://github.com/saaaron/Notepad" target="_blank">
+                        <b>Notepad</b> <span class="bi-box-arrow-up-right"></span>
+                      </a>
+                    </div>
+                    <div>
+                      <span class="bi-github" title="on Github"></span>
+                    </div>
+                  </div>
                   <div>An online platform where users can seamlessly store notes</div>
-                  <div><a href="https://github.com/saaaron/Notepad" target="_blank">GitHub</a></div>
                 </div>
                 <div class="card border-0 p-3 mb-2" style="background-color: #f1f1f1">
-                  <div><b>Hashtag system</b></div>
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <a href="https://github.com/saaaron/Building-a-hashtag-system-using-jQuery-and-PHP" target="_blank">
+                        <b>Hashtag system</b> <span class="bi-box-arrow-up-right"></span>
+                      </a>
+                    </div>
+                    <div>
+                      <span class="bi-github" title="on Github"></span>
+                    </div>
+                  </div>
                   <div>An online platform that manage user hashtags</div>
-                  <div><a href="https://github.com/saaaron/Building-a-hashtag-system-using-jQuery-and-PHP" target="_blank">GitHub</a></div>
                 </div>
                 <div class="card border-0 p-3 mb-2" style="background-color: #f1f1f1">
-                  <div><b>Server & Client side form validation</b></div>
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <a href="https://github.com/saaaron/Server-and-Client-side-form-validation-with-PHP-and-jQuery" target="_blank">
+                        <b>Server & Client side form validation</b> <span class="bi-box-arrow-up-right"></span>
+                      </a>
+                    </div>
+                    <div>
+                      <span class="bi-github" title="on Github"></span>
+                    </div>
+                  </div>
                   <div>An online form that validates user input data</div>
-                  <div><a href="https://github.com/saaaron/Server-and-Client-side-form-validation-with-PHP-and-jQuery" target="_blank">GitHub</a></div>
                 </div>
               </div>
 
@@ -156,6 +209,11 @@
               <p>Welcome to my portfolio! I'm Aaron Saleh, a passionate web and back-end developer who loves to solve problems and share knowledge. With a curious mind and a knack for creativity, I thrive in the ever-evolving world of technology.</p>
               <p>As a web and back-end developer, I strive to create seamless digital experiences that captivate users and bring ideas to life. From crafting elegant and responsive front-end designs to developing robust back-end systems, I enjoy every aspect of the development process. By combining my technical expertise with a user-centric approach, I aim to build intuitive and accessible websites that exceed expectations.</p>
             </div>
+            <div class="d-flex justify-content-center mb-3" style="background-color: #d2c4ff;border-bottom-left-radius: 10px;border-bottom-right-radius: 10px;">
+              <div class="avatar">
+                <img src="img/avatar0.jpg" alt="Avatar">
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -164,11 +222,10 @@
     <footer class="container-fluid bg-w p-2">
       <div class="text-center">
         <div>
-          <font size="2">Designed with <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="#dc3545" class="bi bi-heart-fill" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/></svg> by</font>
+          Designed with <span class="bi-hearts text-danger"></span> by
         </div>
         <div>
-          <h6 class="libre-baskerville-bold">Aaron Saleh</h6>
+          <h6>Aaron Saleh</h6>
         </div>
       </div>
     </footer>
